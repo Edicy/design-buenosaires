@@ -1,1 +1,245 @@
-{"name":"Buenos Aires","layouts":[{"component":true,"title":"SiteHeader","layout_name":"","content_type":"component","file":"components/siteheader.tpl"},{"component":true,"title":"Mainmenu","layout_name":"","content_type":"component","file":"components/mainmenu.tpl"},{"component":true,"title":"Search","layout_name":"","content_type":"component","file":"components/search.tpl"},{"component":true,"title":"Contact","layout_name":"","content_type":"component","file":"components/contact.tpl"},{"component":true,"title":"Submenu","layout_name":"","content_type":"component","file":"components/submenu.tpl"},{"component":false,"title":"Front page","layout_name":"page_front","content_type":"page","file":"layouts/front_page.tpl"},{"component":false,"title":"Common page","layout_name":"page_default","content_type":"page","file":"layouts/common_page.tpl"},{"component":false,"title":"Blog & News","layout_name":"blog_front","content_type":"blog","file":"layouts/blog___news.tpl"},{"component":false,"title":"Blog Article","layout_name":"blog_article","content_type":"blog_article","file":"layouts/blog_article.tpl"},{"component":true,"title":"Langmenu","layout_name":"","content_type":"component","file":"components/langmenu.tpl"},{"component":true,"title":"JS","layout_name":"","content_type":"component","file":"components/js.tpl"},{"component":true,"title":"MobileMenus","layout_name":"","content_type":"component","file":"components/mobilemenus.tpl"}],"author":"T\u00f5nu Runnel","assets":[{"kind":"images","content_type":"image/png","filename":"box-bottom.png","file":"images/box-bottom.png"},{"kind":"images","content_type":"image/png","filename":"box-bottom_medium.png","file":"images/box-bottom_medium.png"},{"kind":"images","content_type":"image/png","filename":"box-loop.png","file":"images/box-loop.png"},{"kind":"images","content_type":"image/png","filename":"box-loop_medium.png","file":"images/box-loop_medium.png"},{"kind":"images","content_type":"image/png","filename":"box-top.png","file":"images/box-top.png"},{"kind":"images","content_type":"image/png","filename":"box-top_medium.png","file":"images/box-top_medium.png"},{"kind":"images","content_type":"image/jpg","filename":"buenosaires_placeholder_img.jpg","file":"images/buenosaires_placeholder_img.jpg"},{"kind":"images","content_type":"image/jpg","filename":"buenosaires_placeholder_img_medium.jpg","file":"images/buenosaires_placeholder_img_medium.jpg"},{"kind":"images","content_type":"image/gif","filename":"buenosaires_search_input.gif","file":"images/buenosaires_search_input.gif"},{"kind":"images","content_type":"image/gif","filename":"buenosaires_search_input_medium.gif","file":"images/buenosaires_search_input_medium.gif"},{"kind":"images","content_type":"image/gif","filename":"buenosaires_search_submit.gif","file":"images/buenosaires_search_submit.gif"},{"kind":"images","content_type":"image/gif","filename":"buenosaires_search_submit_medium.gif","file":"images/buenosaires_search_submit_medium.gif"},{"kind":"stylesheets","content_type":"text/css","filename":"style.css","file":"stylesheets/style.css"},{"kind":"images","content_type":"image/jpg","filename":"buenosaires_bg.jpg","file":"images/buenosaires_bg.jpg"},{"kind":"images","content_type":"image/jpg","filename":"buenosaires_bg_medium.jpg","file":"images/buenosaires_bg_medium.jpg"},{"kind":"images","content_type":"image/gif","filename":"buenosaires_menu.gif","file":"images/buenosaires_menu.gif"},{"kind":"images","content_type":"image/gif","filename":"buenosaires_menu_medium.gif","file":"images/buenosaires_menu_medium.gif"},{"kind":"images","content_type":"image/gif","filename":"buenosaires_menu_hover.gif","file":"images/buenosaires_menu_hover.gif"},{"kind":"images","content_type":"image/gif","filename":"buenosaires_menu_hover_medium.gif","file":"images/buenosaires_menu_hover_medium.gif"},{"kind":"stylesheets","content_type":"text/css","filename":"ie.css","file":"stylesheets/ie.css"}],"preview_medium":"http://static.edicy.com/designs/previews/buenosaires_medium.jpg","preview_small":"http://static.edicy.com/designs/previews/buenosaires_small.jpg","description":"Buenos Aires"}
+{
+  "preview_small": "http://static.edicy.com/designs/previews/buenosaires_small.jpg",
+  "preview_medium": "http://static.edicy.com/designs/previews/buenosaires_medium.jpg",
+  "description": "Buenos Aires",
+  "assets": [
+    {
+      "file": "images/box-bottom.png",
+      "kind": "images",
+      "filename": "box-bottom.png",
+      "content_type": "image/png"
+    },
+    {
+      "file": "images/box-bottom_medium.png",
+      "kind": "images",
+      "filename": "box-bottom_medium.png",
+      "content_type": "image/png"
+    },
+    {
+      "file": "images/box-loop.png",
+      "kind": "images",
+      "filename": "box-loop.png",
+      "content_type": "image/png"
+    },
+    {
+      "file": "images/box-loop_medium.png",
+      "kind": "images",
+      "filename": "box-loop_medium.png",
+      "content_type": "image/png"
+    },
+    {
+      "file": "images/box-top.png",
+      "kind": "images",
+      "filename": "box-top.png",
+      "content_type": "image/png"
+    },
+    {
+      "file": "images/box-top_medium.png",
+      "kind": "images",
+      "filename": "box-top_medium.png",
+      "content_type": "image/png"
+    },
+    {
+      "file": "images/buenosaires_placeholder_img.jpg",
+      "kind": "images",
+      "filename": "buenosaires_placeholder_img.jpg",
+      "content_type": "image/jpg"
+    },
+    {
+      "file": "images/buenosaires_placeholder_img_medium.jpg",
+      "kind": "images",
+      "filename": "buenosaires_placeholder_img_medium.jpg",
+      "content_type": "image/jpg"
+    },
+    {
+      "file": "images/buenosaires_search_input.gif",
+      "kind": "images",
+      "filename": "buenosaires_search_input.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "file": "images/buenosaires_search_input_medium.gif",
+      "kind": "images",
+      "filename": "buenosaires_search_input_medium.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "file": "images/buenosaires_search_submit.gif",
+      "kind": "images",
+      "filename": "buenosaires_search_submit.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "file": "images/buenosaires_search_submit_medium.gif",
+      "kind": "images",
+      "filename": "buenosaires_search_submit_medium.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "file": "stylesheets/style.css",
+      "kind": "stylesheets",
+      "filename": "style.css",
+      "content_type": "text/css"
+    },
+    {
+      "file": "images/buenosaires_bg.jpg",
+      "kind": "images",
+      "filename": "buenosaires_bg.jpg",
+      "content_type": "image/jpg"
+    },
+    {
+      "file": "images/buenosaires_bg_medium.jpg",
+      "kind": "images",
+      "filename": "buenosaires_bg_medium.jpg",
+      "content_type": "image/jpg"
+    },
+    {
+      "file": "images/buenosaires_menu.gif",
+      "kind": "images",
+      "filename": "buenosaires_menu.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "file": "images/buenosaires_menu_medium.gif",
+      "kind": "images",
+      "filename": "buenosaires_menu_medium.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "file": "images/buenosaires_menu_hover.gif",
+      "kind": "images",
+      "filename": "buenosaires_menu_hover.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "file": "images/buenosaires_menu_hover_medium.gif",
+      "kind": "images",
+      "filename": "buenosaires_menu_hover_medium.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "file": "stylesheets/ie.css",
+      "kind": "stylesheets",
+      "filename": "ie.css",
+      "content_type": "text/css"
+    },
+    {
+      "file": "images/header-tag.png",
+      "kind": "images",
+      "filename": "header-tag.png",
+      "content_type": "image/png"
+    },
+    {
+      "file": "images/header-tag.svg",
+      "kind": "images",
+      "filename": "header-tag.svg",
+      "content_type": "image/svg+xml"
+    },
+    {
+      "file": "images/tag.png",
+      "kind": "images",
+      "filename": "tag.png",
+      "content_type": "image/png"
+    },
+    {
+      "file": "images/tag.svg",
+      "kind": "images",
+      "filename": "tag.svg",
+      "content_type": "image/svg+xml"
+    },
+    {
+      "file": "javascripts/modernizr.js",
+      "kind": "javascripts",
+      "filename": "modernizr.js",
+      "content_type": "text/javascript"
+    }
+  ],
+  "name": "Buenos Aires",
+  "author": "Tõnu Runnel",
+  "layouts": [
+    {
+      "file": "components/siteheader.tpl",
+      "title": "SiteHeader",
+      "component": true,
+      "layout_name": "",
+      "content_type": "component"
+    },
+    {
+      "file": "components/mainmenu.tpl",
+      "title": "Mainmenu",
+      "component": true,
+      "layout_name": "",
+      "content_type": "component"
+    },
+    {
+      "file": "components/search.tpl",
+      "title": "Search",
+      "component": true,
+      "layout_name": "",
+      "content_type": "component"
+    },
+    {
+      "file": "components/contact.tpl",
+      "title": "Contact",
+      "component": true,
+      "layout_name": "",
+      "content_type": "component"
+    },
+    {
+      "file": "components/submenu.tpl",
+      "title": "Submenu",
+      "component": true,
+      "layout_name": "",
+      "content_type": "component"
+    },
+    {
+      "file": "layouts/front_page.tpl",
+      "title": "Front page",
+      "component": false,
+      "layout_name": "page_front",
+      "content_type": "page"
+    },
+    {
+      "file": "layouts/common_page.tpl",
+      "title": "Common page",
+      "component": false,
+      "layout_name": "page_default",
+      "content_type": "page"
+    },
+    {
+      "file": "layouts/blog___news.tpl",
+      "title": "Blog & News",
+      "component": false,
+      "layout_name": "blog_front",
+      "content_type": "blog"
+    },
+    {
+      "file": "layouts/blog_article.tpl",
+      "title": "Blog Article",
+      "component": false,
+      "layout_name": "blog_article",
+      "content_type": "blog_article"
+    },
+    {
+      "file": "components/langmenu.tpl",
+      "title": "Langmenu",
+      "component": true,
+      "layout_name": "",
+      "content_type": "component"
+    },
+    {
+      "file": "components/js.tpl",
+      "title": "JS",
+      "component": true,
+      "layout_name": "",
+      "content_type": "component"
+    },
+    {
+      "file": "components/mobilemenus.tpl",
+      "title": "MobileMenus",
+      "component": true,
+      "layout_name": "",
+      "content_type": "component"
+    }
+  ]
+}
