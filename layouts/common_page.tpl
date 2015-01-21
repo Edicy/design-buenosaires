@@ -20,7 +20,7 @@
    <div id="content_inner">
    <div class="clearer"></div>
    <div id="content_inner2" class="clearfix">
-    {% content %}
+    <div data-search-indexing-allowed="true">{% content %}</div>
    </div>
 <div id="sidebar">
 {% include "Submenu" %}
