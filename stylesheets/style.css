@@ -72,10 +72,19 @@ html { -webkit-text-size-adjust: none; }
   padding-left: 5.8%;
   text-align: right;
 }
-   #mainmenu a:hover, #langmenu a:hover {
+#mainmenu ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+#mainmenu li {
+  display: inline-block;
+}
+   #mainmenu a:not(.edy-cbtn):hover, #langmenu a:not(.edy-cbtn):hover {
     text-decoration: none;
    }
-    #mainmenu a {
+    #mainmenu a:not(.edy-cbtn) {
      margin-left: 2px;
   padding-right: 3px;
 color: #003366;
@@ -83,7 +92,7 @@ display: inline-block;
 padding: 5px;
   text-transform: uppercase;
     }
-#langmenu a {
+#langmenu a:not(.edy-cbtn) {
   margin-left: 2px;
   padding-right: 3px;
 color: #003366;
@@ -91,7 +100,7 @@ display: inline-block;
 padding: 5px;
   text-transform: uppercase;
 }
-    #mainmenu a.active, #langmenu a.active {
+    #mainmenu a:not(.edy-cbtn).active, #langmenu a:not(.edy-cbtn).active {
      -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
 background: #6bc7ff;
@@ -102,26 +111,34 @@ background: #6bc7ff;
 -webkit-border-radius: 3px;
 background: #b6edff;
 }
-#mainmenu a span {
+#mainmenu a.edy-cbtn:hover, #langmenu a.edy-cbtn:hover {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  background: none;
+}
+#mainmenu a:not(.edy-cbtn) span {
   float: right;
 }
-     #mainmenu a span, #langmenu a span {
+     #mainmenu a:not(.edy-cbtn) span, #langmenu a:not(.edy-cbtn) span {
       height: 23px;
       padding: 5px 6px 0 6px;
       font-size: 12px;
       text-transform: uppercase;
       
      }
-#langmenu a span {
+#langmenu a:not(.edy-cbtn) span {
   float: left;
 }
-     #mainmenu a.active span, #langmenu a.active span {
+     #mainmenu a:not(.edy-cbtn).active span, #langmenu a:not(.edy-cbtn).active span {
       background: url('../images/buenosaires_menu.gif?1') no-repeat left top;
      }
 #mainmenu a:hover span, #langmenu a:hover span {
   background: url('../images/buenosaires_menu_hover.gif?1') no-repeat left top;
 }
-     #mainmenu a.active span, #langmenu a.active span {
+#mainmenu a.edy-cbtn:hover span, #langmenu a.edy-cbtn:hover span {
+  background: none
+}
+     #mainmenu a.active span, #langmenu a:not(.edy-cbtn).active span {
       font-weight: bold;
      }
 /* content_front */
@@ -526,4 +543,13 @@ body .add-article {
     margin-top: 20px;
   }
   .form_field_textfield, .form_field_textarea { width: 97% }
+}
+
+/* Voog cms style overrides */
+#mainmenu .vg-cms-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#mainmenu .vg-cms-btn:last-child {
+  margin-right: 0;
 }
