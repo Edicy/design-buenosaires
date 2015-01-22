@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ page.langauage_code }}" lang="{{ page.language_code }}">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ page.language_code }}" lang="{{ page.language_code }}">
 <head>
 
 {% include "SiteHeader" %}
@@ -24,8 +24,8 @@
 <div class="entry">
 {% if editmode %}<h1>{% editable article.title plain="true" %}<span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | format_date:"short" }}</span></h1>{% else %}<h1><a href="{{ article.url }}">{{ article.title }} <span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | date:"%b %d" }}</span></a></h1>{% endif %}
 <div class="articlebody clearfix">
-  <div class="excerpt" data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
-  <div data-search-indexing-allowed="true">{% editable article.body %}</div>
+  <div class="excerpt content-hyphenate" data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
+  <div class="content-hyphenate" data-search-indexing-allowed="true">{% editable article.body %}</div>
 
     {% if editmode %}
         <div class="cfx article-tags">
@@ -49,7 +49,7 @@
 <h1>{{ "comments_for_count" |lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span>
 </h1>
 {% for comment in article.comments %}
-<div class="comment{% cycle 'comments': ' light', ' dark' %} edy-site-blog-comment">
+<div class="comment{% cycle 'comments': ' light', ' dark' %} edy-site-blog-comment content-hyphenate">
 <strong>{{ comment.author }}</strong>, {{ comment.created_at | format_date:"long" }} {% removebutton %}<br />
 <p>{{ comment.body_html }}</p>
 </div>
@@ -79,7 +79,7 @@
 {% endcommentform %}
 </div>
    </div>
-<div id="sidebar" class="clearfix">
+<div id="sidebar" class="clearfix content-hyphenate">
   <div class="rss">
 <a href="{{ bloglink }}.rss">RSS</a>
 </div>

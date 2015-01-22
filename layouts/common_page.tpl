@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ page.langauage_code }}" lang="{{ page.language_code }}">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ page.language_code }}" lang="{{ page.language_code }}">
 <head>
 
 {% include "SiteHeader" %}
@@ -19,10 +19,10 @@
     <div id="content_top"></div>
    <div id="content_inner">
    <div class="clearer"></div>
-   <div id="content_inner2" class="clearfix">
-    <div data-search-indexing-allowed="true">{% content %}</div>
+   <div id="content_inner2" class="clearfix content-hyphenate" data-search-indexing-allowed="true">
+    {% content %}
    </div>
-<div id="sidebar" class="clearfix">
+<div id="sidebar" class="clearfix content-hyphenate">
 {% include "Submenu" %}
 {% include "Contact" %}
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ page.langauage_code }}" lang="{{ page.language_code }}">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ page.language_code }}" lang="{{ page.language_code }}">
 <head>
 
 {% include "SiteHeader" %}
@@ -37,13 +37,13 @@
     {% for article in articles %}
 <div class="entry clearfix">
   <h1><a href="{{ article.url }}">{{ article.title }}</a> <span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | format_date:"short" }}</span></a></h1>
-<div class="articlebody">
+<div class="articlebody content-hyphenate">
   {{ article.excerpt }}<br /> <a href="{{ article.url }}">{{ "read_more" | lc }}</a>, <a href="{{ article.url }}#comments">{{ "comments_for_count" | lc }}: {{ article.comments_count }}</a>
 </div>
 </div>
 {% endfor %}
    </div>
-<div id="sidebar" class="clearfix">
+<div id="sidebar" class="clearfix content-hyphenate">
   <div class="rss">
 <a href="{{ bloglink }}.rss">RSS</a>
 </div>
