@@ -561,3 +561,12 @@ body .add-article {
 #mainmenu .vg-cms-btn:last-child {
   margin-right: 0;
 }
+
+#wrap .edy-btn-removecomment {
+  position: relative;
+  top: 2px;
+  line-height: 0 !important;
+}
+#wrap .edy-site-blog-comment:hover .edy-btn-removecomment {
+  text-decoration: none;
+}

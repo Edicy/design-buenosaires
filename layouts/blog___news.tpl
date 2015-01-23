@@ -6,7 +6,7 @@
   {{ blog.rss_link }}
 </head>
 <body>
-<div id="wrap">
+<div id="wrap" class="content-hyphenate">
 	<div id="header">
   <div id="logo">
    <h1 class="clearfix">{% editable site.header %}</h1>
@@ -37,13 +37,13 @@
     {% for article in articles %}
 <div class="entry clearfix">
   <h1><a href="{{ article.url }}">{{ article.title }}</a> <span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | format_date:"short" }}</span></a></h1>
-<div class="articlebody content-hyphenate">
+<div class="articlebody">
   {{ article.excerpt }}<br /> <a href="{{ article.url }}">{{ "read_more" | lc }}</a>, <a href="{{ article.url }}#comments">{{ "comments_for_count" | lc }}: {{ article.comments_count }}</a>
 </div>
 </div>
 {% endfor %}
    </div>
-<div id="sidebar" class="clearfix content-hyphenate">
+<div id="sidebar" class="clearfix">
   <div class="rss">
 <a href="{{ bloglink }}.rss">RSS</a>
 </div>
